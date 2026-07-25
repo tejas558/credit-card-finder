@@ -95,6 +95,7 @@
       streaming: "Streaming",
       shopping: "Shopping",
       airline: "Airline",
+      secured: "Secured",
     };
     return map[cat] || cat;
   }
