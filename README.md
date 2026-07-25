@@ -5,7 +5,7 @@
 **Repo:** [github.com/tejas558/credit-card-finder](https://github.com/tejas558/credit-card-finder)  
 **Author:** [github.com/tejas558](https://github.com/tejas558)
 
-A simple U.S. credit card finder. Browse top cards for travel, cash back, dining, and more — filter by benefits, search by name or issuer, and open the bank’s page to learn more and apply.
+A simple U.S. credit card finder. Browse top cards for travel, airport lounge access, cash back, dining, and more — filter by benefits, search by name or issuer, and open the bank’s page to learn more and apply.
 
 ## Features
 

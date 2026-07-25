@@ -82,6 +82,7 @@
   function categoryLabel(cat) {
     const map = {
       travel: "Travel",
+      lounge: "Lounge Access",
       cashback: "Cash Back",
       dining: "Dining",
       gas: "Gas",
