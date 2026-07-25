@@ -1,8 +1,9 @@
 # CardFind — U.S. Credit Card Finder
 
-**Live site:** _deploying…_
+**Live site:** [https://credit-card-finder.vercel.app](https://credit-card-finder.vercel.app)
 
-**GitHub:** [github.com/tejas558](https://github.com/tejas558)
+**Repo:** [github.com/tejas558/credit-card-finder](https://github.com/tejas558/credit-card-finder)  
+**Author:** [github.com/tejas558](https://github.com/tejas558)
 
 A simple U.S. credit card finder. Browse top cards for travel, cash back, dining, and more — filter by benefits, search by name or issuer, and open the bank’s page to learn more and apply.
 
