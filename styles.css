@@ -368,6 +368,17 @@ button {
   color: var(--text-secondary);
 }
 
+.top-pick-fee {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.top-pick-fee.free {
+  color: var(--success);
+}
+
 /* ─── Filters ───────────────────────────────────────────────── */
 .filters-bar {
   display: flex;
@@ -635,6 +646,50 @@ button {
 .card-fee.free {
   color: var(--success);
   font-weight: 600;
+}
+
+.card-fees {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 0.7rem 0.85rem;
+  background: var(--bg-muted);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 0.82rem;
+}
+
+.fee-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.fee-label {
+  color: var(--text-muted);
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.fee-value {
+  color: var(--text);
+  font-weight: 600;
+  text-align: right;
+  line-height: 1.3;
+}
+
+.fee-value.free {
+  color: var(--success);
+}
+
+.fee-note {
+  margin-top: 0.15rem;
+  padding-top: 0.45rem;
+  border-top: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  line-height: 1.35;
 }
 
 .card-title {

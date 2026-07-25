@@ -716,6 +716,40 @@ const CREDIT_CARDS = [
     gradient: "linear-gradient(135deg, #1a1a1a 0%, #d71e28 80%, #ff4d4d 100%)",
     accent: "#ffb3b8",
   },
+  {
+    id: "robinhood-gold-card",
+    name: "Robinhood Gold Card",
+    issuer: "Robinhood",
+    network: "Mastercard",
+    annualFee: 0,
+    feeNote: "Requires Robinhood Gold ($5/mo or $50/yr)",
+    welcomeBonus: "None (ongoing 3% cash back)",
+    welcomeBonusValue: 0,
+    apr: "19.99%–32.99% variable",
+    rating: 4.8,
+    categories: ["cashback", "no-fee", "travel"],
+    topFor: null,
+    keywords: [
+      "robinhood",
+      "gold card",
+      "3% cash back",
+      "flat rate",
+      "brokerage",
+      "invest",
+      "usa",
+    ],
+    highlights: [
+      "3% cash back on all eligible purchases",
+      "5% on travel booked through Robinhood’s portal",
+      "No annual fee on the card itself",
+      "Redeem rewards into your Robinhood account",
+    ],
+    description:
+      "Industry-leading flat 3% cash back on nearly everything. Card has no annual fee, but requires an active Robinhood Gold membership ($50/yr).",
+    applyUrl: "https://robinhood.com/creditcard/",
+    gradient: "linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 40%, #c9a227 100%)",
+    accent: "#00c805",
+  },
 ];
 
 // Normalize: every card in this catalog is a U.S. product

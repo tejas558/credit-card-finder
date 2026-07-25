@@ -54,8 +54,29 @@
 
   // ─── Helpers ────────────────────────────────────────────────
   function formatFee(fee) {
-    if (fee === 0) return { text: "No annual fee", free: true };
-    return { text: `$${fee}/yr`, free: false };
+    if (fee === 0) return { text: "No annual fee", free: true, short: "$0" };
+    return { text: `$${fee}/yr annual fee`, free: false, short: `$${fee}/yr` };
+  }
+
+  function renderFeesBlock(card) {
+    const fee = formatFee(card.annualFee);
+    const feeNote = card.feeNote
+      ? `<div class="fee-note">${escapeHtml(card.feeNote)}</div>`
+      : "";
+    const apr = card.apr || "See issuer terms";
+    return `
+      <div class="card-fees" aria-label="Fees">
+        <div class="fee-row">
+          <span class="fee-label">Annual fee</span>
+          <span class="fee-value${fee.free ? " free" : ""}">${escapeHtml(fee.short)}${fee.free ? " · No annual fee" : ""}</span>
+        </div>
+        <div class="fee-row">
+          <span class="fee-label">Purchase APR</span>
+          <span class="fee-value">${escapeHtml(apr)}</span>
+        </div>
+        ${feeNote}
+      </div>
+    `;
   }
 
   function categoryLabel(cat) {
@@ -162,12 +183,13 @@
               </svg>
               ${card.rating.toFixed(1)}
             </span>
-            <span class="card-fee${fee.free ? " free" : ""}">${escapeHtml(fee.text)}</span>
+            <span class="card-fee${fee.free ? " free" : ""}">${escapeHtml(fee.short)} annual fee</span>
             <span>${escapeHtml(card.issuer)}</span>
             <span class="card-region" title="Issued in the United States">🇺🇸 U.S.</span>
           </div>
           <h3 class="card-title">${escapeHtml(card.name)}</h3>
           <p class="card-desc">${escapeHtml(card.description)}</p>
+          ${renderFeesBlock(card)}
           <ul class="card-highlights">${highlights}</ul>
           ${bonusHtml}
           <div class="card-tags">${tags}</div>
@@ -217,6 +239,11 @@
             </div>
             <div class="top-pick-name">${escapeHtml(card.name)}</div>
             <div class="top-pick-blurb">${escapeHtml(meta.blurb)}</div>
+            <div class="top-pick-fee${card.annualFee === 0 ? " free" : ""}">${
+              card.annualFee === 0
+                ? "No annual fee"
+                : `$${card.annualFee}/yr annual fee`
+            }</div>
           </a>
         `;
       })
@@ -241,6 +268,8 @@
       card.description,
       card.welcomeBonus,
       card.apr || "",
+      card.feeNote || "",
+      String(card.annualFee ?? ""),
       ...(card.keywords || []),
       ...card.highlights,
       ...card.categories.map(categoryLabel),
