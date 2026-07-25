@@ -50,7 +50,7 @@ const CREDIT_CARDS = [
       "Priority Pass & Chase Sapphire Lounge access",
     ],
     description:
-      "Premium travel powerhouse with strong credits, lounge access, and high-value point transfers.",
+      "Premium travel powerhouse with Priority Pass and Chase Sapphire Lounge access, strong travel credits, and high-value point transfers.",
     applyUrl: "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
     gradient: "linear-gradient(135deg, #1a1a1a 0%, #3d3d3d 50%, #5a4a2a 100%)",
     accent: "#c9a227",
@@ -74,7 +74,7 @@ const CREDIT_CARDS = [
       "Fine Hotels + Resorts benefits",
     ],
     description:
-      "Ultra-premium lifestyle card packed with travel credits and elite lounge access for frequent flyers.",
+      "Ultra-premium lifestyle card with Centurion Lounges, Priority Pass, and Delta Sky Club access (when flying Delta), plus rich travel credits for frequent flyers.",
     applyUrl: "https://www.americanexpress.com/us/credit-cards/card/platinum/",
     gradient: "linear-gradient(135deg, #6b6b6b 0%, #a8a8a8 40%, #e8e8e8 100%)",
     accent: "#111111",
@@ -99,7 +99,7 @@ const CREDIT_CARDS = [
       "Capital One Lounges + Priority Pass Select",
     ],
     description:
-      "Excellent premium travel value — lounge access and a travel credit that often offsets the fee.",
+      "Excellent premium travel value — Capital One Lounges plus Priority Pass Select, and a $300 travel credit that often offsets the fee.",
     applyUrl: "https://www.capitalone.com/credit-cards/venture-x/",
     gradient: "linear-gradient(135deg, #0d1b2a 0%, #1b3a4b 50%, #415a77 100%)",
     accent: "#7ec8e3",
@@ -693,7 +693,7 @@ const CREDIT_CARDS = [
       "Priority Pass Select lounge access",
     ],
     description:
-      "Premium U.S. Bank travel card with strong mobile-wallet earn and a credit that can offset the fee.",
+      "Premium U.S. Bank travel card with Priority Pass Select lounge access, strong mobile-wallet earn, and a credit that can offset the fee.",
     applyUrl: "https://www.usbank.com/credit-cards/altitude-reserve-visa-infinite-credit-card.html",
     gradient: "linear-gradient(135deg, #0a1628 0%, #1a3a5c 50%, #c0c0c0 100%)",
     accent: "#a8c5e2",
@@ -743,7 +743,7 @@ const CREDIT_CARDS = [
       "Priority boarding",
     ],
     description:
-      "Solid mid-tier United Airlines card for U.S. travelers who want free bags and MileagePlus miles.",
+      "Solid mid-tier United Airlines card for U.S. travelers — free bags, two United Club one-time lounge passes each year, and MileagePlus miles.",
     applyUrl: "https://creditcards.chase.com/travel-credit-cards/united/explorer",
     gradient: "linear-gradient(135deg, #002244 0%, #0055a5 60%, #1e90ff 100%)",
     accent: "#7ec8ff",
@@ -1055,7 +1055,7 @@ const CREDIT_CARDS = [
       "Employee cards available",
     ],
     description:
-      "Business version of Amex Platinum — elite lounge access and travel credits tailored for U.S. business spenders.",
+      "Business version of Amex Platinum — Centurion Lounges, Priority Pass Select, and Delta Sky Club access (when flying Delta), plus travel credits for U.S. business spenders.",
     applyUrl:
       "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-business-platinum-credit-card-amex/",
     gradient: "linear-gradient(135deg, #4a4a4a 0%, #8a8a8a 40%, #d8d8d8 100%)",
